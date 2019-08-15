@@ -1,0 +1,23 @@
+h1 {
+    @include respond-to("lg") {
+        font-size: 3rem;
+    }
+    @include respond-to("hd") {
+        font-size: 3.5rem;
+    }
+    @include respond-to("fhd") {
+        font-size: 5.5rem;
+    }
+}
+
+h5 {
+    @include respond-to("lg") {
+        font-size: 1.5rem;
+    }
+    @include respond-to("hd") {
+        font-size: 1.75rem;
+    }
+    @include respond-to("fhd") {
+        font-size: 2rem;
+    }
+}
