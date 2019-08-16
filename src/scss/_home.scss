@@ -87,9 +87,6 @@
     @include respond-to("hd") {
       width: 6%;
     }
-    @include respond-to("fhd") {
-      width: 4%;
-    }
     img {
       width: 100%;
     }
@@ -97,22 +94,51 @@
 }
 
 .acquire {
-    flex-direction: column;
-    padding: 1.5rem 1rem;
-    @include respond-to("md") {
-      flex-direction: row;
-    }
-    @include respond-to("lg") {
-      padding: 1.5rem 4rem;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  @include respond-to("md") {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  @include respond-to("lg") {
+    padding: 1.5rem 4rem;
+  }
+  @include respond-to("fhd") {
+    padding: 1.5rem 6rem;
+  }
+  &__text {
+    @include respond-to("hd") {
+        width: 40%;
     }
     @include respond-to("fhd") {
-      padding: 2rem 6rem;
+        width: 30%;
     }
-    &__image {
-        width: 14rem;
-        align-self: center;
-        img {
-            width: 100%;
-        }
+    .extra-text {
+      display: none;
+      @include respond-to("md") {
+        display: block;
+      }
+      
+      &__border {
+        border-bottom: solid 2px $secondary-color;
+        padding-bottom: 1rem;
+      }
+      &__p {
+        border-bottom: solid 2px $light-grey-color;
+        padding-bottom: 1rem;
+      }
     }
+  }
+  &__image {
+    width: 14rem;
+    align-self: center;
+    @include respond-to("md") {
+      width: 30rem;
+      padding: 0 3rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
 }
