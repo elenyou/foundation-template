@@ -2,6 +2,7 @@
   display: none;
 }
 .navbar {
+  background-color: $primary-color;
   @include respond-to("lg") {
     margin: 1rem 3rem;
   }
