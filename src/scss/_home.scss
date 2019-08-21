@@ -81,7 +81,8 @@
 }
 
 .block,
-.communicate-footer  {
+.communicate-footer,
+.trial  {
   flex-direction: column;
   padding: 2rem 1rem;
   @include respond-to("md") {
@@ -268,6 +269,10 @@
       }
     }
   }
+}
+
+.trial {
+  background-color: $light-grey-color;
 }
 
 

@@ -133,61 +133,75 @@
       width: 100%; }
 
 .block,
-.communicate-footer {
+.communicate-footer,
+.trial {
   flex-direction: column;
   padding: 2rem 1rem; }
   @media (min-width: 768px) {
     .block,
-    .communicate-footer {
+    .communicate-footer,
+    .trial {
       flex-direction: row;
       align-items: center;
       justify-content: center; } }
   @media (min-width: 992px) {
     .block,
-    .communicate-footer {
+    .communicate-footer,
+    .trial {
       padding: 2.5rem 4rem; } }
   @media (min-width: 1920px) {
     .block,
-    .communicate-footer {
+    .communicate-footer,
+    .trial {
       padding: 2.5rem 6rem; } }
   @media (min-width: 768px) {
     .block__text,
-    .communicate-footer__text {
+    .communicate-footer__text,
+    .trial__text {
       width: 55%; } }
   @media (min-width: 1440px) {
     .block__text,
-    .communicate-footer__text {
+    .communicate-footer__text,
+    .trial__text {
       width: 40%; } }
   @media (min-width: 1920px) {
     .block__text,
-    .communicate-footer__text {
+    .communicate-footer__text,
+    .trial__text {
       width: 30%; } }
   .block__text .extra-text,
-  .communicate-footer__text .extra-text {
+  .communicate-footer__text .extra-text,
+  .trial__text .extra-text {
     display: none; }
     @media (min-width: 768px) {
       .block__text .extra-text,
-      .communicate-footer__text .extra-text {
+      .communicate-footer__text .extra-text,
+      .trial__text .extra-text {
         display: block; } }
     .block__text .extra-text__border,
-    .communicate-footer__text .extra-text__border {
+    .communicate-footer__text .extra-text__border,
+    .trial__text .extra-text__border {
       border-bottom: solid 2px #3040C4;
       padding-bottom: 1rem; }
     .block__text .extra-text__p,
-    .communicate-footer__text .extra-text__p {
+    .communicate-footer__text .extra-text__p,
+    .trial__text .extra-text__p {
       border-bottom: solid 2px #F4F5F7;
       padding-bottom: 1rem; }
   .block__image,
-  .communicate-footer__image {
+  .communicate-footer__image,
+  .trial__image {
     width: 14rem;
     align-self: center; }
     @media (min-width: 768px) {
       .block__image,
-      .communicate-footer__image {
+      .communicate-footer__image,
+      .trial__image {
         width: 30rem;
         padding: 0 3rem; } }
     .block__image img,
-    .communicate-footer__image img {
+    .communicate-footer__image img,
+    .trial__image img {
       width: 100%; }
 
 .team {
@@ -307,6 +321,9 @@
     .hiring .jobs .job p {
       margin: 0; }
 
+.trial {
+  background-color: #F4F5F7; }
+
 .btn {
   background-color: #3040C4;
   color: #fff;
@@ -342,6 +359,48 @@
     @media (min-width: 768px) {
       .buttons a {
         margin: 0 0.5rem; } }
+
+footer {
+  padding: 2rem 1rem 0 1rem; }
+  @media (min-width: 1200px) {
+    footer {
+      padding: 2.5rem 4rem 0 4rem; } }
+  @media (min-width: 1920px) {
+    footer {
+      padding: 2.5rem 6rem 0 6rem; } }
+  footer .footer-big {
+    flex-direction: column; }
+    @media (min-width: 768px) {
+      footer .footer-big {
+        flex-direction: row;
+        justify-content: space-around; } }
+    @media (min-width: 768px) {
+      footer .footer-big__block {
+        width: 33%; } }
+    footer .footer-big__block--text a {
+      color: #2B292D;
+      padding: 0.2rem 0; }
+    footer .footer-big__block .logo {
+      color: #2B292D; }
+      footer .footer-big__block .logo img {
+        width: 3rem; }
+    footer .footer-big__block .stores {
+      margin: 1rem 0;
+      justify-content: start; }
+      footer .footer-big__block .stores a {
+        padding-right: 1rem; }
+  footer .footer-small {
+    justify-content: space-between;
+    border-top: solid 2px #F4F5F7;
+    padding: 1rem 0; }
+    @media (min-width: 768px) {
+      footer .footer-small {
+        flex-direction: row; } }
+    footer .footer-small .additional-nav a {
+      color: #2B292D;
+      padding-right: 0.5rem; }
+    footer .footer-small .social-icons a {
+      padding-right: 0.5rem; }
 
 * {
   margin: 0;
