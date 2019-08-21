@@ -17,19 +17,6 @@
     @include respond-to("md") {
       margin-top: 0;
     }
-    .buttons {
-      flex-direction: column;
-      @include respond-to("md") {
-        flex-direction: row;
-        margin-top: 3rem;
-      }
-      a {
-        margin-top: 1rem;
-        @include respond-to("md") {
-          margin: 0 0.5rem;
-        }
-      }
-    }
   }
   &__image {
     display: none;
@@ -73,7 +60,7 @@
 
 .brands {
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   &__image {
     width: 33%;
@@ -84,7 +71,7 @@
     @include respond-to("lg") {
       width: 8%;
     }
-    @include respond-to("hd") {
+    @include respond-to("fhd") {
       width: 6%;
     }
     img {
@@ -158,7 +145,6 @@
   }
 }
 
-
 .communicate-footer {
   @include respond-to("md") {
     align-items: start;
@@ -175,6 +161,115 @@
     }
   }
 }
+
+.engage {
+  background-color: rgba(0, 161, 198, 0.15);
+  .block__image {
+    flex-direction: column;
+    width: 12rem;
+    margin: 1rem 0;
+    @include respond-to("md") {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 18rem;
+    }
+    @include respond-to("lg") {
+      width: 20rem;
+    }
+    @include respond-to("xl") {
+      width: 26rem;
+    }
+    img {
+      width: 100%;
+      padding: 0.5rem 0;
+      @include respond-to("md") {
+        margin: 1.5rem;
+        padding: 0;
+      }
+    }
+  }
+}
+
+.trusted {
+  padding: 2rem 1rem;
+  @include respond-to("xl") {
+    padding: 2.5rem 4rem;
+    background-image: url('/images/trusted-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @include respond-to("fhd") {
+    padding: 2.5rem 6rem;
+  }
+  .card {
+    border: none;
+    @include respond-to("xl") {
+     width: 60%;
+     margin: 0 auto;
+    }
+    @include respond-to("hd") {
+      width: 45%;
+     }
+    @include respond-to("fhd") {
+      width: 30%;
+     }
+  }
+}
+
+.hiring {
+  padding: 2rem 1rem;
+  @include respond-to("xl") {
+    padding: 2.5rem 4rem;
+  }
+  @include respond-to("fhd") {
+    padding: 2.5rem 6rem;
+  }
+  .jobs {
+    .job {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid rgba(43,41,45,0.20);
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      cursor: pointer;
+      color: $dark-color;
+      transition: $transition;
+      @include respond-to("md") {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @include respond-to("lg") {
+        width: 70%;
+        align-self: center;
+      }
+      @include respond-to("hd") {
+        width: 60%;
+      }
+      @include respond-to("fhd") {
+        width: 40%;
+      }
+      &:hover {
+        background-color: $secondary-color;
+        h5{
+          color: $white-color;
+        }
+        p{
+          color: $white-color;
+          img {
+            display: none;
+          }
+        }
+
+      }
+      p {
+        margin:0;
+      }
+    }
+  }
+}
+
 
 
 

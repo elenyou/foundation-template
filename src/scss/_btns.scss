@@ -25,3 +25,17 @@
         }
     }
 }
+
+.buttons {
+    flex-direction: column;
+    @include respond-to("md") {
+      flex-direction: row;
+      margin-top: 3rem;
+    }
+    a {
+      margin-top: 1rem;
+      @include respond-to("md") {
+        margin: 0 0.5rem;
+      }
+    }
+  }

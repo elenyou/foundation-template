@@ -126,7 +126,7 @@
     @media (min-width: 992px) {
       .brands__image {
         width: 8%; } }
-    @media (min-width: 1920px) {
+    @media (min-width: 1440px) {
       .brands__image {
         width: 6%; } }
     .brands__image img {
@@ -241,71 +241,14 @@
 
 .trusted {
   padding: 2rem 1rem; }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     .trusted {
-      padding: 2.5rem 4rem;
-      background-image: url("/images/trusted-bg.png");
-      background-position: center;
-      background-repeat: no-repeat; } }
+      padding: 2.5rem 4rem; } }
   @media (min-width: 1920px) {
     .trusted {
       padding: 2.5rem 6rem; } }
   .trusted .card {
     border: none; }
-    @media (min-width: 1200px) {
-      .trusted .card {
-        width: 60%;
-        margin: 0 auto; } }
-    @media (min-width: 1440px) {
-      .trusted .card {
-        width: 45%; } }
-    @media (min-width: 1920px) {
-      .trusted .card {
-        width: 30%; } }
-
-.hiring {
-  padding: 2rem 1rem; }
-  @media (min-width: 1200px) {
-    .hiring {
-      padding: 2.5rem 4rem; } }
-  @media (min-width: 1920px) {
-    .hiring {
-      padding: 2.5rem 6rem; } }
-  .hiring .jobs .job {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid rgba(43, 41, 45, 0.2);
-    border-radius: 8px;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    cursor: pointer;
-    color: #2B292D;
-    transition: all 0.5s ease-in; }
-    @media (min-width: 768px) {
-      .hiring .jobs .job {
-        flex-direction: row;
-        justify-content: space-between; } }
-    @media (min-width: 992px) {
-      .hiring .jobs .job {
-        width: 70%;
-        align-self: center; } }
-    @media (min-width: 1440px) {
-      .hiring .jobs .job {
-        width: 60%; } }
-    @media (min-width: 1920px) {
-      .hiring .jobs .job {
-        width: 40%; } }
-    .hiring .jobs .job:hover {
-      background-color: #3040C4; }
-      .hiring .jobs .job:hover h5 {
-        color: #fff; }
-      .hiring .jobs .job:hover p {
-        color: #fff; }
-        .hiring .jobs .job:hover p img {
-          display: none; }
-    .hiring .jobs .job p {
-      margin: 0; }
 
 .btn {
   background-color: #3040C4;
