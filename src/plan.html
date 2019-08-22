@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Foundation</title>
+  </head>
+
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <a class="navbar-brand font-weight-bold" href="#">
+        <img src="images/logo.png" class="d-inline-block" alt="logo" />
+        Foundation
+      </a>
+
+      <button
+        class="navbar-toggler navbar-toggler-right"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggler"
+        aria-controls="navbarToggler"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarToggler"
+      >
+        <ul class="navbar-nav m-2">
+          <li class="nav-item">
+            <a class="nav-link text-body" href="#"
+              >Home<span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" href="plan.html">Plan</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle text-body"
+              data-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Library
+              <img src="images/arrow.png" alt="arrow down" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="#acquire">
+                <h5 class="text-success">Acquire Users</h5>
+                <p>Work with the tools and services you use.</p>
+                <div class="dropdown-divider"></div>
+              </a>
+              <a class="dropdown-item" href="plan.html">
+                <h5 class="text-success">Book Appointments</h5>
+                <p>We offer measures like 2FA to ensure the safety.</p>
+                <div class="dropdown-divider"></div>
+              </a>
+              <a class="dropdown-item" href="#engage">
+                <h5 class="text-success">Engage Customers</h5>
+                <p>Get started with our simple snippet of JavaScript.</p>
+                <div class="dropdown-divider"></div>
+              </a>
+              <a class="dropdown-item" href="#communicate">
+                <h5 class="text-success">Generate Leads</h5>
+                <p>Become a better designer by learning this courses.</p>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <section class="plan d-flex flex-column">
+      <div class="plan__header text-center">
+        <h2 class="font-weight-bold">
+          Pick a plan. Grow faster with Foundation
+        </h2>
+        <p>Try for free 14 days.</p>
+      </div>
+      <div class="plan__cards d-flex mb-4">
+        <div class="card">
+          <div class="card-img-top">
+            <img src="images/card-1.png" alt="image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h5>Standart</h5>
+              <p>Works perfect for small teams and companies</p>
+              <p><span class="font-weight-bold">$89</span> /mo</p>
+              <a href="#" class="btn mb-4">Try for free</a>
+            </div>
+            <div class="card-footer">
+              <ul class="small">
+                <li>Upload up to 200MB</li>
+                <li>View message perfomance and test against varlants</li>
+                <li>Control groups to improve results</li>
+                <li>Engage customers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-top">
+            <img src="images/card-2.png" alt="image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h5>Professional</h5>
+              <p>Works perfect for small teams and companies</p>
+              <p><span class="font-weight-bold">$249</span> /mo</p>
+              <a href="#" class="btn mb-4">Try for free</a>
+            </div>
+            <div class="card-footer">
+              <ul class="small">
+                <li>Upload up to 1000MB</li>
+                <li>View message perfomance and test against varlants</li>
+                <li>Control groups to improve results</li>
+                <li>Engage customers</li>
+                <li>Unlimited subscribtion</li>
+                <li>Free Support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-top">
+            <img src="images/card-3.png" alt="image" />
+          </div>
+          <div class="card-body">
+            <div class="card-text">
+              <h5>Corporate</h5>
+              <p>Works perfect for small teams and companies</p>
+              <p><span class="font-weight-bold">$899</span> /mo</p>
+              <a href="#" class="btn mb-4">Try for free</a>
+            </div>
+            <div class="card-footer">
+              <ul class="small">
+                <li>Upload up to 5000MB</li>
+                <li>View message perfomance and test against varlants</li>
+                <li>Control groups to improve results</li>
+                <li>Engage customers</li>
+                <li>Unlimited subscribtion</li>
+                <li>Unlimited messages</li>
+                <li>Free Support</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="plan__extra d-flex">
+        <div class="text-center">
+          <p class="font-weight-bold">Need a Support?</p>
+          <p>View message performance and test against variants and control.</p>
+          <a href="#">Open a Ticket</a>
+        </div>
+        <div class="text-center">
+          <p class="font-weight-bold">Customize Plan</p>
+          <p>
+            Looking for something else? Request a Consultation to customize a
+            plan.
+          </p>
+          <a href="#">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="fqa">
+      <h2 class="text-center font-weight-bold">Your questions, answered</h2>
+      <div class="fqa__text">
+        <div class="block">
+          <p class="font-weight-bold">Can I cancel anytime?</p>
+          <p>
+            Of course. Contact our Client Support team prior to your next
+            billing cycle and we'll take care of your request.
+          </p>
+        </div>
+        <div class="block">
+          <p class="font-weight-bold">
+            My team has credits. How do we use them?
+          </p>
+          <p>
+            Once your team signs up for a subscription plan, we’ll draw against
+            your credit balance until it runs out. Only then will we start
+            charging your subscription to your credit card.
+          </p>
+        </div>
+        <div class="block">
+          <p class="font-weight-bold">Is there a setup fee?</p>
+          <p>
+            We’ll make a one-time, prorated charge to your credit card to cover
+            your new team member’s account for the remainder of the current
+            billing period.
+          </p>
+        </div>
+        <div class="block">
+          <p class="font-weight-bold">Can I cancel anytime?</p>
+          <p>
+            Of course. Contact our Client Support team prior to your next
+            billing cycle and we'll take care of your request.
+          </p>
+        </div>
+        <div class="block">
+          <p class="font-weight-bold">
+            What are my payment options - credit card and/or invoicing?
+          </p>
+          <p>
+            You can use your credit card to pay for any plan. If you sign up for
+            an Annual subscription and plan to spend at least $2,000.
+          </p>
+        </div>
+        <div class="block">
+          <p class="font-weight-bold">Can we get a refund?</p>
+          <p>
+            Team Owners can change the team’s subscription level. There are two
+            options when downgrading from a paid plan to the Free plan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="trial block d-flex">
+      <div class="block__image">
+        <img src="images/trial.png" alt="window with dog image" />
+      </div>
+      <div class="block__text">
+        <h2 class="font-weight-bold">
+          Start your free trial.
+        </h2>
+        <p>
+          Get notified about company updates, news and blog posts. We hate spam.
+        </p>
+        <form class="form-inline">
+          <div class="form-group  mb-2">
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Enter your email"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary mb-2">
+            Get Started
+          </button>
+          <div class="small">
+            Free 14-day trial · Easy setup · Cancel any time. Check out
+            <a href="#">Terms of Use.</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="d-flex flex-column">
+      <div class="footer-big d-flex">
+        <div class="footer-big__block mb-4">
+          <a class="font-weight-bold small logo" href="#">
+            <img src="images/logo-2.png" class="d-inline-block" alt="logo" />
+            Foundation
+          </a>
+          <p class="small mt-2 mb-2">
+            Foundation is a website template for startups and small teams. It
+            helps to build a website in no time.
+          </p>
+          <div class="stores d-flex">
+            <a href="#">
+              <img src="images/AppStore.png" alt="AppStore Logo" />
+            </a>
+            <a href="#">
+              <img src="images/GooglePlay.png" alt="GooglePlay logo" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-big__block--text d-flex flex-column mb-4">
+          <p class="font-weight-bold small">Product</p>
+          <a class="small" href="#acquire">Acquire Users</a>
+          <a class="small" href="#engage">Content Marketing</a>
+          <a class="small" href="#communicate">Customer Management</a>
+        </div>
+        <div class="footer-big__block--text d-flex flex-column mb-4">
+          <p class="font-weight-bold small">Company</p>
+          <a class="small" href="#hiring">About Foundation</a>
+          <a class="small" href="#brands">Brand Guidelines</a>
+          <a class="small" href="#hiring">Careers</a>
+          <a class="small" href="plan.html">Support</a>
+        </div>
+      </div>
+      <div class="footer-small d-flex">
+        <div class="additional-nav">
+          <a class="small" href="legal.html/terms">Terms</a>
+          <a class="small" href="legal.html/privacy">Privacy</a>
+          <a class="small" href="legal.html/license">License</a>
+        </div>
+        <div class="social-icons">
+          <a href="#" target="blank"
+            ><img src="images/icon-twitter.png" alt="twitter icon"
+          /></a>
+          <a href="#" target="blank"
+            ><img src="images/icon-fb.png" alt="facebook icon"
+          /></a>
+          <a href="#" target="blank"
+            ><img src="images/LinkedIn.png" alt="LinkdIn icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+.plan {
+  padding: 2rem 1rem;
+  background-color: $light-grey-color;
+  @include respond-to("xl") {
+    padding: 2.5rem 4rem;
+  }
+  @include respond-to("fhd") {
+    padding: 2.5rem 6rem;
+  }
+  &__header {
+    margin-top: 7rem;
+    @include respond-to("lg") {
+      margin: 8rem 0 1rem 0;
+    }
+    @include respond-to("hd") {
+      margin: 10rem 0 2rem 0;
+    }
+  }
+  &__cards {
+    flex-direction: column;
+    @include respond-to("md") {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .card {
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      cursor: pointer;
+      transition: $transition;
+      @include respond-to("lg") {
+        width: 32%;
+      }
+      @include respond-to("xl") {
+        width: 28%;
+      }
+      @include respond-to("hd") {
+        width: 25%;
+      }
+      @include respond-to("fhd") {
+        width: 22%;
+      }
+      &:hover {
+        box-shadow: 0 13px 18px -8px rgba(0, 0, 0, 0.15),
+          0 11px 55px 10px rgba(0, 0, 0, 0.07);
+      }
+      .card-img-top {
+        width: 10rem;
+        align-self: center;
+        margin-bottom: 1rem;
+        @include respond-to("md") {
+          width: 8rem;
+          height: 10rem;
+        }
+        @include respond-to("lg") {
+          width: 10rem;
+          height: 12rem;
+        }
+        @include respond-to("hd") {
+          width: 12rem;
+          height: 14rem;
+        }
+        @include respond-to("fhd") {
+          width: 14rem;
+          height: 16rem;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .card-text {
+        .btn {
+          display: block;
+        }
+      }
+      .card-footer {
+        background-color: transparent;
+        ul {
+          list-style: none; 
+          li {
+            padding: 0.25rem 0;
+            &::before { 
+              content:"\2713" ;   
+              color: $secondary-color;  
+              display: inline-block;  
+              width: 1em; 
+              margin-left: -0.9em;  
+           } 
+          } 
+        }
+      }
+    }
+  }
+  &__extra {
+    flex-direction: column;
+    @include respond-to("md") {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .text-center {
+      margin-bottom: 3rem;
+      @include respond-to("md") {
+        width: 45%;
+      }
+      @include respond-to("lg") {
+        width: 35%;
+      }
+      @include respond-to("hd") {
+        width: 25%;
+      }
+      a {
+        color: $secondary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.fqa {
+  padding: 2rem 1rem;
+  @include respond-to("xl") {
+    padding: 2.5rem 4rem;
+  }
+  @include respond-to("fhd") {
+    padding: 2.5rem 6rem;
+  }
+  &__text {
+    @include respond-to("md") {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .block {
+      padding: 1rem 0;
+      @include respond-to("md") {
+        width: 45%;
+      }
+      @include respond-to("xl") {
+        width: 35%;
+      }
+    }
+  }
+}
