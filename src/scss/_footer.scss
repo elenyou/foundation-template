@@ -10,7 +10,7 @@ footer {
     flex-direction: column;
     @include respond-to("md") {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
     }
     &__block {
       @include respond-to("md") {
@@ -52,13 +52,4 @@ footer {
   }
 }
 
-// @include respond-to("xl") {
-//     width: 60%;
-//     margin: 0 auto;
-//    }
-//    @include respond-to("hd") {
-//      width: 45%;
-//     }
-//    @include respond-to("fhd") {
-//      width: 30%;
-//     }
+

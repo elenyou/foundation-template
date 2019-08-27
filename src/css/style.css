@@ -53,6 +53,8 @@
   .dropdown-menu .dropdown-item {
     white-space: normal;
     padding: 4px 10px; }
+    .dropdown-menu .dropdown-item:active {
+      background-color: transparent; }
     @media (min-width: 1200px) {
       .dropdown-menu .dropdown-item {
         white-space: nowrap; } }
@@ -323,6 +325,41 @@
 
 .trial {
   background-color: #F4F5F7; }
+  @media (min-width: 992px) {
+    .trial .form-group {
+      margin-right: 0.5rem; } }
+
+.contact {
+  padding: 2rem 1rem;
+  margin-top: 6rem;
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .contact {
+      padding: 2rem 4rem; } }
+  @media (min-width: 992px) {
+    .contact {
+      padding: 3rem 4rem; } }
+  @media (min-width: 1200px) {
+    .contact {
+      padding: 3rem 4rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; } }
+  @media (min-width: 1920px) {
+    .contact {
+      padding: 3rem 6rem; } }
+  @media (min-width: 1200px) {
+    .contact__text {
+      width: 40%; } }
+  @media (min-width: 992px) {
+    .contact__image {
+      width: 40rem;
+      align-self: center; } }
+  @media (min-width: 1920px) {
+    .contact__image {
+      width: 60rem; } }
+  .contact__image img {
+    width: 100%; }
 
 .plan {
   padding: 2rem 1rem;
@@ -496,7 +533,7 @@ footer {
     @media (min-width: 768px) {
       footer .footer-big {
         flex-direction: row;
-        justify-content: space-around; } }
+        justify-content: space-between; } }
     @media (min-width: 768px) {
       footer .footer-big__block {
         width: 33%; } }

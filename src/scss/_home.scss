@@ -273,6 +273,11 @@
 
 .trial {
   background-color: $light-grey-color;
+  .form-group {
+    @include respond-to("lg") {
+      margin-right: 0.5rem;
+    }
+  }
 }
 
 

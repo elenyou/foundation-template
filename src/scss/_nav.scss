@@ -27,6 +27,9 @@
   .dropdown-item {
     white-space: normal;
     padding: 4px 10px;
+    &:active {
+      background-color: transparent;
+    }
     @include respond-to("xl") {
       white-space: nowrap;
     }
